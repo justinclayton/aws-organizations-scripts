@@ -1,0 +1,7 @@
+accounts_to_create: 2
+workshop_username: "workshop"
+alias_prefix: "workshop-x"
+email_prefix: "yourname+workshop-x"
+email_suffix: "@example.com"
+account_description_prefix: "Workshop X"
+output_file_name: workshop.csv
