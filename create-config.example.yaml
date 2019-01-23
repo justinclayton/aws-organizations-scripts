@@ -1,7 +1,11 @@
-accounts_to_create: 2
-workshop_username: "workshop"
+## required variables
+num_accounts: 2
 alias_prefix: "workshop-x"
 email_prefix: "yourname+workshop-x"
 email_suffix: "@example.com"
+iam_username: workshop
 account_description_prefix: "Workshop X"
-output_file_name: workshop.csv
+## optional variables
+# iam_password: will-autogen-if-not-specified
+# output_file_name: defaults to <alias_prefix>.csv
+# role_name: OrganizationAccountAccessRole

@@ -1,3 +1,4 @@
+.vscode
 *.csv
 create-config.yaml
 nuke-config.yaml
