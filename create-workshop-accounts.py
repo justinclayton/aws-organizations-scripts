@@ -10,7 +10,7 @@ dry_run = False
 debug = True
 
 #### CONFIG ####
-configfile = "create-config.yaml"
+configfile = "config.yaml"
 
 with open(configfile, "r") as yamlfile:
     config = yaml.load(yamlfile)
@@ -127,14 +127,14 @@ def create_alias_and_user(
         console_link = "https://{}.signin.aws.amazon.com/console".format(alias)
 
         print(
-            "User Created: {},{},{},{}".format(
-                account, username, password, console_link
+            "User Created: {},{},{},{},{}".format(
+                account, alias, username, password, console_link
             )
         )
 
         text_file = open(output_file_name, "a")
         text_file.write(
-            "{},{},{},{}\n".format(account, username, password, console_link)
+            "{},{},{},{},{}\n".format(account, alias, username, password, console_link)
         )
         text_file.close()
 
